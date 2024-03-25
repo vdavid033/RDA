@@ -6,10 +6,12 @@ import javax.swing.JFrame;
 import javax.swing.JButton;
 import java.awt.BorderLayout;
 import java.awt.Font;
+import javax.swing.JTextField;
 
 public class Main {
 
 	private JFrame frmVideoteka;
+	private JTextField textField;
 
 	/**
 	 * Launch the application.
@@ -63,5 +65,10 @@ public class Main {
 		btnUnosKorisnika.setFont(new Font("Tahoma", Font.PLAIN, 12));
 		btnUnosKorisnika.setBounds(207, 128, 161, 45);
 		frmVideoteka.getContentPane().add(btnUnosKorisnika);
+		
+		textField = new JTextField();
+		textField.setBounds(63, 232, 305, 29);
+		frmVideoteka.getContentPane().add(textField);
+		textField.setColumns(10);
 	}
 }
