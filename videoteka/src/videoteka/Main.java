@@ -7,6 +7,7 @@ import javax.swing.JButton;
 import java.awt.BorderLayout;
 import java.awt.Font;
 import javax.swing.JTextField;
+import javax.swing.JLabel;
 
 public class Main {
 
@@ -70,5 +71,9 @@ public class Main {
 		textField.setBounds(63, 232, 305, 29);
 		frmVideoteka.getContentPane().add(textField);
 		textField.setColumns(10);
+		
+		JLabel lblNewLabel = new JLabel("New label");
+		lblNewLabel.setBounds(33, 207, 108, 14);
+		frmVideoteka.getContentPane().add(lblNewLabel);
 	}
 }
